@@ -1,5 +1,18 @@
 import React, { Component } from 'react';
+import Navbar from './components/layout/Navbar';
 import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+        <Navbar title='Github Finder' icon='fab fa-github' />
+      </div>
+    );
+  }
+}
+
+export default App;
 
 // Returning code based on a conditional with a standard if-statement:
 // class App extends Component {
@@ -38,18 +51,18 @@ import './App.css';
 // *** *** ***
 
 // An additional step to support an else statement with the ampersand operator which effectifily reads as "only show the name if showName is true":
-class App extends Component {
-  render() {
-    const name = 'Jack';
-    const loading = false;
-    const showName = true;
+// class App extends Component {
+//   render() {
+//     const name = 'Jack';
+//     const loading = false;
+//     const showName = true;
 
-    return (
-      <div className='App'>
-        {loading ? <h4>Loading...</h4> : <h1>Hello {showName && name}</h1>}
-      </div>
-    );
-  }
-}
+//     return (
+//       <div className='App'>
+//         {loading ? <h4>Loading...</h4> : <h1>Hello {showName && name}</h1>}
+//       </div>
+//     );
+//   }
+// }
 
-export default App;
+// export default App;
